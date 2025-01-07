@@ -430,7 +430,7 @@ ifneq ($(filter darwin%, $(target.triplet)),)
   system = Darwin
 endif
 
-ifneq ($(filter mingw% cygwin%, $(target.triplet)),)
+ifneq ($(filter mingw% cygwin% windows%, $(target.triplet)),)
   system = Windows
 endif
 
